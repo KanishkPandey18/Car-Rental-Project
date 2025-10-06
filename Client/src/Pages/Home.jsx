@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../Components/Hero'
 import CarCard from '../Components/CarCard'
 import FeaturedSection from '../Components/FeaturedSection'
+import Banner from '../Components/Banner'
 // import dummyCarData from '../assets/assets'
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <div>
             <Hero/>
             <FeaturedSection/>
+            <Banner/>
         </div>
     )
 }

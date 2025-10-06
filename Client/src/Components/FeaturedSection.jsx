@@ -9,7 +9,7 @@ const FeaturedSection = () => {
         const navigate = useNavigate()
 
     return (
-        <div className='flex flex-col items-center py-24 px-6 md:pxx-16 lg:px-24 xl:px-32'>
+        <div className='flex flex-col items-center py-24 px-6 md:px-16 lg:px-24 xl:px-32'>
 
             <div>
                 <Title title='Featured Vehicles' subTitle='Explore our selection of premium vehicles available for your next adventure.'/>

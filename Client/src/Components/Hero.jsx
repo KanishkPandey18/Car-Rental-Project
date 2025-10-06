@@ -7,7 +7,8 @@ const Hero = () => {
 
     return (
         <div>
-            <div className='flex flex-col h-screen items-center justify-center gap-14 bg-light text-center'>
+            {/* Displaying flex col on full screen with gap-14 bw them */}
+            <div className='flex flex-col min-h-screen md:h-screen items-center justify-center gap-14 bg-light text-center px-4'>
                 <h1 className='text-4xl md:text-5xl font-semibold'>Luxury Cars on Rent</h1>
                 <form className='flex flex-col md:flex-row items-start md:items-center justify-between p-6 rounded-lg md:rounded-full w-full max-w-80 md:max-w-200 bg-white shadow-[0px_8px_20px_rgba(0,0,0,0.1)]' action="" >
                     <div className='flex flex-col md:flex-row items-start md:items-center gap-10 md:ml-8'>
@@ -29,7 +30,7 @@ const Hero = () => {
                             <input type="date" id="return-date" min={new Date().toISOString().split('T')[0]} required className='text-sm text-gray-500' />
                         </div>
                     </div>
-                        <button className='flex items-cneter justify-center gap-1 px-9 py-3 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full cursor-pointer'>
+                        <button className='flex items-center justify-center gap-1 px-9 py-3 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full cursor-pointer'>
                             <img src={assets.search_icon} alt="search" className='brightness-300' />Search
                         </button>
                 </form>
