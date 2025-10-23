@@ -14,10 +14,10 @@ const Sidebar = () => {
     }
 
     return (
-        <div className='relative min-h-screen md:flex flex-col pt-8 items center max-w-13 md:max-w-60 w-full border-r border-borderColor text-sm'>
+        <div className='relative min-h-screen md:flex flex-col pt-8 items-center max-w-13 md:max-w-60 w-full border-r border-borderColor text-sm'>
             <div className='group relative'>
                 <label htmlFor="image">
-                    <img src={image?URL.createObjectURL(image) : user?.image || "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcar%2F&psig=AOvVaw2Zr1Y6vxLpm3EytxzyNGyd&ust=1761223225494000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKi54fvpt5ADFQAAAAAdAAAAABAE"} alt="" />
+                    <img src={image?URL.createObjectURL(image) : user?.image || "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcar%2F&psig=AOvVaw2Zr1Y6vxLpm3EytxzyNGyd&ust=1761223225494000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKi54fvpt5ADFQAAAAAdAAAAABAE"} alt="" className='w-9 h-9 md:h-14 md:w-14 rounded-full mx-auto' />
                     <input type="file" id='image' accept='image/*' hidden onChange={(e)=>setImage(e.target.files[0])} />
 
                     <div className='absolute hidden top-0 right-0 left-0 bottom-0 bg-black/10 rounded-full group-hover:flex items-center justify-center cursor-pointer'>
