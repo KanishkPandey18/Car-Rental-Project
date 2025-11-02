@@ -63,7 +63,7 @@ export const loginUser = async (req,res)=>{
 
 //get user data using jwt
 
-export const getUserData = async ()=>{
+export const getUserData = async (req,res)=>{
     try {
         const {user} = req;
         res.json({success : true , user})
