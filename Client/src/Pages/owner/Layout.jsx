@@ -1,16 +1,25 @@
-import React from 'react'
-import NavbarOwner from '../../Components/owner/NavbarOwner'
-import Sidebar from '../../Components/owner/Sidebar'
+import NavbarOwner from '../../components/owner/NavbarOwner'
+import Sidebar from '../../components/owner/Sidebar'
 import { Outlet } from 'react-router-dom'
+import { useAppContext } from '../../context/AppContext';
+import { useEffect } from 'react';
 
 const Layout = () => {
+    const { isOwner, navigate } = useAppContext();
+
+    useEffect(() => {
+        if (!isOwner) {
+            navigate('/');
+        }
+    }, [isOwner])
     return (
         <div className='flex flex-col'>
-            <NavbarOwner/>
+            <NavbarOwner />
             <div className='flex'>
-                <Sidebar/>
-                <Outlet/>
+                <Sidebar />
+                <Outlet />
             </div>
+
         </div>
     )
 }

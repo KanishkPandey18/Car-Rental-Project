@@ -32,16 +32,23 @@ import calendar_icon_colored from "./calendar_icon_colored.svg"
 import location_icon_colored from "./location_icon_colored.svg"
 import testimonial_image_1 from "./testimonial_image_1.png"
 import testimonial_image_2 from "./testimonial_image_2.png"
+import testimonial_image_3 from "./testimonial_image_3.png"
 import main_car from "./main_car.png"
 import banner_car_image from "./banner_car_image.png"
 import user_profile from "./user_profile.png"
+import user_profile2 from "./user_profile2.png"
+import user_profile3 from "./user_profile3.png"
+import user_profile4 from "./user_profile4.png"
 import upload_icon from "./upload_icon.svg"
 import car_image1 from "./car_image1.png"
 import car_image2 from "./car_image2.png"
 import car_image3 from "./car_image3.png"
 import car_image4 from "./car_image4.png"
+import car_image5 from "./car_image5.png"
+import car_image6 from "./car_image6.png"
 
-export const cityList = ['New York', 'Los Angeles', 'Houston', 'Chicago']
+
+export const cityList = ['Jaipur', 'Mumbai', 'Delhi', 'Noida']
 
 export const assets = {
     logo,
@@ -78,14 +85,20 @@ export const assets = {
     filter_icon,
     testimonial_image_1,
     testimonial_image_2,
+    testimonial_image_3,
     main_car,
     banner_car_image,
     car_image1,
     upload_icon,
     user_profile,
+    user_profile2,
+    user_profile3,
+    user_profile4,
     car_image2,
     car_image3,
-    car_image4
+    car_image4,
+    car_image5,
+    car_image6,
 }
 
 export const menuLinks = [
@@ -103,7 +116,7 @@ export const ownerMenuLinks = [
 
 export const dummyUserData = {
     "_id": "6847f7cab3d8daecdb517095",
-    "name": "GreatStack",
+    "name": "MASQ",
     "email": "admin@example.com",
     "role": "owner",
     "image": user_profile,
@@ -124,7 +137,7 @@ export const dummyCarData = [
         "pricePerDay": 300,
         "location": "New York",
         "description": "The BMW X5 is a mid-size luxury SUV produced by BMW. The X5 made its debut in 1999 as the first SUV ever produced by BMW.",
-        "isAvailable": true,
+        "isAvaliable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -141,7 +154,7 @@ export const dummyCarData = [
         "pricePerDay": 130,
         "location": "Chicago",
         "description": "The Toyota Corolla is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
-        "isAvailable": true,
+        "isAvaliable": true,
         "createdAt": "2025-04-16T08:33:57.993Z",
     },
     {
@@ -158,7 +171,7 @@ export const dummyCarData = [
         "pricePerDay": 200,
         "location": "Los Angeles",
         "description": "The Jeep Wrangler is a mid-size luxury SUV produced by Jeep. The Wrangler made its debut in 2003 as the first SUV ever produced by Jeep.",
-        "isAvailable": true,
+        "isAvaliable": true,
         "createdAt": "2025-04-16T08:34:39.592Z",
     },
     {
@@ -175,7 +188,7 @@ export const dummyCarData = [
         "pricePerDay": 209,
         "location": "Houston",
         "description": "This is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
-        "isAvailable": true,
+        "isAvaliable": true,
         "createdAt": "2025-04-17T06:15:47.318Z",
     }
 ];

@@ -1,23 +1,19 @@
-import React from 'react'
-import Hero from '../Components/Hero'
-import CarCard from '../Components/CarCard'
-import FeaturedSection from '../Components/FeaturedSection'
-import Banner from '../Components/Banner'
-import Testimonial from '../Components/Testimonial'
-import NewsLetter from '../Components/NewsLetter'
-import Footer from '../Components/Footer'
-// import dummyCarData from '../assets/assets'
+import Hero from '../components/Hero'
+import FeaturedSection from '../components/FeaturedSection'
+import Banner from '../components/Banner'
+import Testimonial from '../components/Testimonial'
+import NewsLetter from '../components/NewsLetter'
 
 const Home = () => {
     return (
-        <div>
-            <Hero/>
-            <FeaturedSection/>
-            <Banner/>
-            <Testimonial/>
-            <NewsLetter/>
-        </div>
+        <>
+            <Hero />
+            <FeaturedSection />     {/* imported - CarCard, Title */}
+            <Banner />
+            <Testimonial />         {/* imported - Title */}
+            <NewsLetter />
+        </>
     )
 }
 
-export default Home
+export default Home // exported to 3_CarRental/client/src/App.jsx
